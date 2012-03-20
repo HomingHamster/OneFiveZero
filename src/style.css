@@ -106,6 +106,24 @@ body {
 	padding-top: 20px;
 }
 
+.content .greet {
+	width: 270px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 0.9em;
+	border: 1px solid #555;
+}
+
+.content .greet h2 {
+	text-transform: uppercase;
+	color: #555;
+	font-size: 1.3em;
+	padding-bottom: 10px;
+}
+
 .footer {
 	width: 900px;
 	margin-left:20px;
