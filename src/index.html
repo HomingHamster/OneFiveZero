@@ -9,6 +9,20 @@
 <title>Felix Farquharson's assignment 2 for CS15020</title>
 <link rel="stylesheet" href="style.css" />
 
+<script type="text/javascript">
+var dateObj = new Date()
+function hellofunction (name) {
+	var name = name.value
+	var hours = dateObj.getHours()
+	if (hours > 11) {
+		window.alert("Good afternoon " + name + "!")
+	}
+	else {
+		window.alert("Good morning " + name + "!")
+	}
+}
+</script>
+
 </head>
 
 <body>
@@ -37,9 +51,9 @@ to recieve your own personalised greeting. Enjoy.</p>
 
 <br />
 
-<form class="greet" action="">
+<form class="greet" action="" onsubmit="hellofunction(document.getElementById('name'))">
 <h2>Greet Form</h2>
-<p>NAME: <input type="text" name="firstname" />
+<p>NAME: <input type="text" id="name" name="firstname" />
 <input type="submit" value="Greet" /></p>
 </form>
 
